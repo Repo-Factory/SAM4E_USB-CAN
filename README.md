@@ -21,3 +21,7 @@ Clone this repository
 `projects` - Will hold source code individual to this project   
 
 To build a specific project, go the CMakeLists.txt and add the project files to the src list. 
+
+## Maintainers
+
+[@Conner Sommerfield](https://github.com/Repo-Factory/)
