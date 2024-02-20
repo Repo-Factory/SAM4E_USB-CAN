@@ -52,9 +52,15 @@
  * running the ASF driver selector tool. Any changes will be discarded.
  */
 
+// From module: CAN - Controller Area Network
+#include <can.h>
+
 // From module: Common SAM compiler driver
 #include <compiler.h>
 #include <status_codes.h>
+
+// From module: GPIO - General purpose Input/Output
+#include <gpio.h>
 
 // From module: Generic board support
 #include <board.h>
@@ -64,6 +70,12 @@
 
 // From module: Interrupt management - SAM implementation
 #include <interrupt.h>
+
+// From module: MATRIX - Bus Matrix
+#include <matrix.h>
+
+// From module: PIO - Parallel Input/Output Controller
+#include <pio.h>
 
 // From module: PMC - Power Management Controller
 #include <pmc.h>
@@ -81,7 +93,36 @@
 // From module: SAM4E startup code
 #include <exceptions.h>
 
+// From module: Sleep manager - SAM implementation
+#include <sam/sleepmgr.h>
+#include <sleepmgr.h>
+
+// From module: Standard serial I/O (stdio) - SAM implementation
+#include <stdio_serial.h>
+
 // From module: System Clock Control - SAM4E implementation
 #include <sysclk.h>
+
+// From module: UART - Univ. Async Rec/Trans
+#include <uart.h>
+
+// From module: USART - Serial interface - SAM implementation for devices with both UART and USART
+#include <serial.h>
+
+// From module: USART - Univ. Syn Async Rec/Trans
+#include <usart.h>
+
+// From module: USB CDC Protocol
+#include <usb_protocol_cdc.h>
+
+// From module: USB Device CDC (Single Interface Device)
+#include <udi_cdc.h>
+
+// From module: USB Device Stack Core (Common API)
+#include <udc.h>
+#include <udd.h>
+
+// From module: pio_handler support enabled
+#include <pio_handler.h>
 
 #endif // ASF_H
