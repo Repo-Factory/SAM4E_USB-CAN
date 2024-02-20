@@ -2,6 +2,34 @@
 # Automatically-generated file. Do not edit or delete the file
 ################################################################################
 
+src\ASF\common\services\sleepmgr\sam\sleepmgr.c
+
+src\ASF\common\services\usb\class\cdc\device\udi_cdc.c
+
+src\ASF\common\services\usb\udc\udc.c
+
+src\ASF\common\utils\stdio\read.c
+
+src\ASF\sam\drivers\pio\pio_handler.c
+
+src\ASF\sam\drivers\udp\udp_device.c
+
+src\ASF\sam\drivers\usart\usart.c
+
+src\ASF\common\utils\stdio\write.c
+
+src\ASF\common\services\usb\class\cdc\device\udi_cdc_desc.c
+
+src\ASF\common\services\serial\usart_serial.c
+
+src\ASF\sam\drivers\can\can.c
+
+src\ASF\sam\drivers\matrix\matrix.c
+
+src\ASF\sam\drivers\pio\pio.c
+
+src\ASF\sam\drivers\uart\uart.c
+
 src\ASF\common\services\clock\sam4e\sysclk.c
 
 src\ASF\common\utils\interrupt\interrupt_sam_nvic.c

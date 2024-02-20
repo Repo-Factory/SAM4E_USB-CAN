@@ -1,5 +1,6 @@
-src/main.d src/main.o: ../src/main.c ../src/asf.h \
- ../src/ASF/sam/drivers/can/can.h ../src/ASF/sam/utils/compiler.h \
+src/ASF/sam/drivers/matrix/matrix.d src/ASF/sam/drivers/matrix/matrix.o: \
+ ../src/ASF/sam/drivers/matrix/matrix.c \
+ ../src/ASF/sam/drivers/matrix/matrix.h ../src/ASF/sam/utils/compiler.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\lib\gcc\arm-none-eabi\6.3.1\include\stddef.h \
  ../src/ASF/common/utils/parts.h \
  ../src/ASF/sam/utils/preprocessor/preprocessor.h \
@@ -122,51 +123,9 @@ src/main.d src/main.o: ../src/main.c ../src/asf.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-none-eabi\include\machine\stdlib.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-none-eabi\include\alloca.h \
  ../src/ASF/common/utils/interrupt.h \
- ../src/ASF/common/utils/interrupt/interrupt_sam_nvic.h \
- ../src/ASF/sam/utils/status_codes.h \
- ../src/ASF/common/services/gpio/gpio.h \
- ../src/ASF/common/services/gpio/sam_gpio/sam_gpio.h \
- ../src/ASF/sam/drivers/pio/pio.h ../src/ASF/common/boards/board.h \
- ../src/ASF/sam/boards/sam4e_xplained_pro/sam4e_xplained_pro.h \
- ../src/ASF/sam/utils/cmsis/sam4e/source/templates/exceptions.h \
- ../src/ASF/common/services/ioport/ioport.h \
- ../src/ASF/common/services/ioport/sam/ioport_pio.h \
- ../src/ASF/common/services/clock/sysclk.h ../src/config/conf_clock.h \
- ../src/ASF/common/services/clock/sam4e/sysclk.h \
- ../src/ASF/common/services/clock/osc.h \
- ../src/ASF/common/services/clock/sam4e/osc.h \
- ../src/ASF/sam/drivers/pmc/pmc.h ../src/ASF/common/services/clock/pll.h \
- ../src/ASF/common/services/clock/sam4e/pll.h \
- ../src/ASF/sam/drivers/matrix/matrix.h \
- ../src/ASF/sam/drivers/pmc/sleep.h ../src/ASF/sam/utils/fpu/fpu.h \
- ../src/ASF/sam/boards/sam4e_xplained_pro/led.h \
- ../src/ASF/common/services/sleepmgr/sam/sleepmgr.h \
- ../src/config/conf_sleepmgr.h \
- ../src/ASF/common/services/sleepmgr/sleepmgr.h \
- ../src/ASF/common/services/sleepmgr/sam/sleepmgr.h \
- ../src/ASF/common/utils/stdio/stdio_serial/stdio_serial.h \
- ../src/ASF/common/services/serial/serial.h \
- ../src/ASF/common/services/serial/sam_uart/uart_serial.h \
- ../src/ASF/sam/drivers/uart/uart.h ../src/ASF/sam/drivers/usart/usart.h \
- ../src/config/conf_uart_serial.h \
- ../src/ASF/common/services/usb/class/cdc/usb_protocol_cdc.h \
- ../src/ASF/common/services/usb/class/cdc/device/udi_cdc.h \
- ../src/config/conf_usb.h \
- ../src/ASF/common/services/usb/class/cdc/device/udi_cdc_conf.h \
- ../src/ASF/common/services/usb/usb_protocol.h \
- ../src/ASF/common/services/usb/usb_atmel.h \
- ../src/ASF/common/services/usb/udc/udd.h \
- ../src/ASF/common/services/usb/udc/udc_desc.h \
- ../src/ASF/common/services/usb/udc/udi.h \
- ../src/ASF/common/services/usb/udc/udc_desc.h \
- ../src/ASF/common/services/usb/udc/udi.h \
- ../src/ASF/common/services/usb/udc/udc.h \
- ../src/ASF/common/services/usb/udc/udd.h \
- ../src/ASF/sam/drivers/pio/pio_handler.h
+ ../src/ASF/common/utils/interrupt/interrupt_sam_nvic.h
 
-../src/asf.h:
-
-../src/ASF/sam/drivers/can/can.h:
+../src/ASF/sam/drivers/matrix/matrix.h:
 
 ../src/ASF/sam/utils/compiler.h:
 
@@ -415,93 +374,3 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-no
 ../src/ASF/common/utils/interrupt.h:
 
 ../src/ASF/common/utils/interrupt/interrupt_sam_nvic.h:
-
-../src/ASF/sam/utils/status_codes.h:
-
-../src/ASF/common/services/gpio/gpio.h:
-
-../src/ASF/common/services/gpio/sam_gpio/sam_gpio.h:
-
-../src/ASF/sam/drivers/pio/pio.h:
-
-../src/ASF/common/boards/board.h:
-
-../src/ASF/sam/boards/sam4e_xplained_pro/sam4e_xplained_pro.h:
-
-../src/ASF/sam/utils/cmsis/sam4e/source/templates/exceptions.h:
-
-../src/ASF/common/services/ioport/ioport.h:
-
-../src/ASF/common/services/ioport/sam/ioport_pio.h:
-
-../src/ASF/common/services/clock/sysclk.h:
-
-../src/config/conf_clock.h:
-
-../src/ASF/common/services/clock/sam4e/sysclk.h:
-
-../src/ASF/common/services/clock/osc.h:
-
-../src/ASF/common/services/clock/sam4e/osc.h:
-
-../src/ASF/sam/drivers/pmc/pmc.h:
-
-../src/ASF/common/services/clock/pll.h:
-
-../src/ASF/common/services/clock/sam4e/pll.h:
-
-../src/ASF/sam/drivers/matrix/matrix.h:
-
-../src/ASF/sam/drivers/pmc/sleep.h:
-
-../src/ASF/sam/utils/fpu/fpu.h:
-
-../src/ASF/sam/boards/sam4e_xplained_pro/led.h:
-
-../src/ASF/common/services/sleepmgr/sam/sleepmgr.h:
-
-../src/config/conf_sleepmgr.h:
-
-../src/ASF/common/services/sleepmgr/sleepmgr.h:
-
-../src/ASF/common/services/sleepmgr/sam/sleepmgr.h:
-
-../src/ASF/common/utils/stdio/stdio_serial/stdio_serial.h:
-
-../src/ASF/common/services/serial/serial.h:
-
-../src/ASF/common/services/serial/sam_uart/uart_serial.h:
-
-../src/ASF/sam/drivers/uart/uart.h:
-
-../src/ASF/sam/drivers/usart/usart.h:
-
-../src/config/conf_uart_serial.h:
-
-../src/ASF/common/services/usb/class/cdc/usb_protocol_cdc.h:
-
-../src/ASF/common/services/usb/class/cdc/device/udi_cdc.h:
-
-../src/config/conf_usb.h:
-
-../src/ASF/common/services/usb/class/cdc/device/udi_cdc_conf.h:
-
-../src/ASF/common/services/usb/usb_protocol.h:
-
-../src/ASF/common/services/usb/usb_atmel.h:
-
-../src/ASF/common/services/usb/udc/udd.h:
-
-../src/ASF/common/services/usb/udc/udc_desc.h:
-
-../src/ASF/common/services/usb/udc/udi.h:
-
-../src/ASF/common/services/usb/udc/udc_desc.h:
-
-../src/ASF/common/services/usb/udc/udi.h:
-
-../src/ASF/common/services/usb/udc/udc.h:
-
-../src/ASF/common/services/usb/udc/udd.h:
-
-../src/ASF/sam/drivers/pio/pio_handler.h:
