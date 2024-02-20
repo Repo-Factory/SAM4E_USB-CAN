@@ -12,7 +12,7 @@ Clone this repository
 
     git clone https://github.com/Repo-Factory/SAM4E_USB-CAN
 
-`ASF` - Will hold some libraries and modules provided by the manufacturer with header definitions and functions to use. Note that because of the custom build, only the libraries I foresee being used for the project are stored here. If others are needed, they would have to be manually included or a new build file could be made from scratch by referring to Atmel's generated Makefile after importing modules from the ASF Wizard in Atmel Studio.   
+`ASF` - Will hold some libraries and modules provided by the manufacturer with header definitions and functions to use. Note that because of the custom build, only the libraries I foresee being used for the project are stored here. If others are needed, they would have to be manually included or a new build file could be made from scratch by referring to Atmel's generated Makefile after importing modules from the ASF Wizard in Atmel Studio. Note: this is pretty unpleasant.   
 
 `config` - Provided by Atmel, no need to touch   
 
