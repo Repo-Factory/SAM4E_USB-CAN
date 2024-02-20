@@ -20,7 +20,7 @@ Clone this repository
 
 `projects` - Will hold source code individual to this project   
 
-To build a specific project, go the CMakeLists.txt and add the project files to the src list. 
+To build a specific project, go the CMakeLists.txt and add the project files to the src list. Then follow the instructions in the [compile.txt](compile.txt) file
 
 ## Maintainers
 
