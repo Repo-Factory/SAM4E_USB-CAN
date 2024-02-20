@@ -19,7 +19,7 @@ Type openocd in terminal to listen on port 3333
 
 You'll need arm-none-eabi-gdb
 Start this with executable in another terminal like this
-arm-none-eabi-gdb build/SAM4E_CAN
+arm-none-eabi-gdb build/sam
 (gdb) target extended-remote localhost:3333
 (gdb) load
 (gdb) monitor reset

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.12)
 
-project(SAM4E_CAN)
+project(sam)
 
 set(MCU "cortex-m4")
 set(FPU "softfp") 
@@ -36,7 +36,7 @@ add_executable(
     # src/utils/quick_blink.c
     # src/projects/can/can_drv.c
     # src/projects/can/can_ex.c
-    # src/projects/usb/usb.c
+    src/projects/usb/usb.c
     # src/projects/other/quick.c
  	# src/projects/other/light.c
 )
