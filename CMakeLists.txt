@@ -33,10 +33,12 @@ add_executable(
     src/ASF/sam/utils/cmsis/sam4e/source/templates/system_sam4e.c 
     src/ASF/sam/utils/syscalls/gcc/syscalls.c 
     
-    # src/utils/quick_blink.c
+    src/utils/quick_blink.c
+
     # src/projects/can/can_drv.c
     # src/projects/can/can_ex.c
     src/projects/usb/usb.c
+    # src/projects/other/print.c
     # src/projects/other/quick.c
  	# src/projects/other/light.c
 )
@@ -104,7 +106,7 @@ include_directories(
     src/ASF/thirdparty/CMSIS/Lib/GCC/ 
     src/config/
     src/utils/
-    )
+)
 
 target_compile_options(${PROJECT_NAME} PRIVATE
     -mcpu=${MCU}

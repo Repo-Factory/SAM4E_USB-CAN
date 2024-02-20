@@ -26,10 +26,12 @@ literature number 6123, for more  */
 
 #include <asf.h>
 #include <stdio.h>
+#include "quick_blink.h"
 
 int main (void) 
 {
     sysclk_init();
+    quick_blink();
     board_init();
     udc_start();
 }

@@ -36,7 +36,7 @@ void SysTick_Handler(void)
 static void hardware_init(void)
 {
     // Disable Watchdog
-	WDT->WDT_MR = WDT_MR_WDDIS ;
+	WDT->WDT_MR = WDT_MR_WDDIS;
 	/* 
 	 *	When the I/O line is controlled by the PIO Controller, the pin can be configured to be driven. 
 	 * This is done by writing the Output Enable Register (PIO_OER) 
