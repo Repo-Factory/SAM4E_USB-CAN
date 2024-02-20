@@ -24,9 +24,11 @@ To build a specific project, go the CMakeLists.txt and add the project files to 
 
 ## Useful Links
 
-[SAM4E Datasheet] (https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/Atmel-11157-32-bit-Cortex-M4-Microcontroller-SAM4E16-SAM4E8_Datasheet.pdf)
-[ASF API Reference] (https://ww1.microchip.com/downloads/aemDocuments/documents/atmel-start/50002633B.pdf)
-[ASF Examples] (https://asf.microchip.com/docs/latest/sam4e/html/)
+[SAM4E Datasheet] (https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/Atmel-11157-32-bit-Cortex-M4-Microcontroller-SAM4E16-SAM4E8_Datasheet.pdf)  
+
+[ASF API Reference] (https://ww1.microchip.com/downloads/aemDocuments/documents/atmel-start/50002633B.pdf)  
+
+[ASF Examples] (https://asf.microchip.com/docs/latest/sam4e/html/)  
 
 ## Maintainers
 
