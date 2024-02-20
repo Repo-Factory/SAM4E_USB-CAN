@@ -14,8 +14,10 @@ Clone this repository
 
 `ASF` - Will hold some libraries and modules provided by the manufacturer with header definitions and functions to use. Note that because of the custom build, only the libraries I foresee being used for the project are stored here. If others are needed, they would have to be manually included or a new build file could be made from scratch by referring to Atmel's generated Makefile after importing modules from the ASF Wizard in Atmel Studio.   
 
-`config` - Provided by Atmel, no need to touch
-`utilities` - Will hold helper functions
-`projects` - Will hold source code individual to this project
+`config` - Provided by Atmel, no need to touch   
+
+`utilities` - Will hold helper functions   
+
+`projects` - Will hold source code individual to this project   
 
 To build a specific project, go the CMakeLists.txt and add the project files to the src list. 
