@@ -22,6 +22,12 @@ Clone this repository
 
 To build a specific project, go the CMakeLists.txt and add the project files to the src list. Then follow the instructions in the [compile.txt](compile.txt) file
 
+## Useful Links
+
+[SAM4E Datasheet] (https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/Atmel-11157-32-bit-Cortex-M4-Microcontroller-SAM4E16-SAM4E8_Datasheet.pdf)
+[ASF API Reference] (https://ww1.microchip.com/downloads/aemDocuments/documents/atmel-start/50002633B.pdf)
+[ASF Examples] (https://asf.microchip.com/docs/latest/sam4e/html/)
+
 ## Maintainers
 
 [@Conner Sommerfield](https://github.com/Repo-Factory/)
