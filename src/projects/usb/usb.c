@@ -24,14 +24,44 @@ Atmel provides an INF example to see the device as a new serial port and also pr
 used by the SAM-BA application: atm6124.sys. Refer to the application note “USB Basic Application”, Atmel
 literature number 6123, for more  */
 
+/* 
+//    iram_size_t udi_cdc_read_buf(int* buf, iram_size_t size);
+//    int udi_cdc_putc(int value);
+//    iram_size_t udi_cdc_write_buf(const int* buf, iram_size_t size);  */
+
 #include <asf.h>
 #include <stdio.h>
 #include "quick_blink.h"
+#include "led_f.h"
 
-int main (void) 
+static bool my_flag_autorize_cdc_transfert = false;
+bool my_callback_cdc_enable(void)
+{
+    my_flag_autorize_cdc_transfert = true;
+    return true;
+}
+void my_callback_cdc_disable(void)
+{
+    my_flag_autorize_cdc_transfert = false;
+}
+
+void hardware_init(void)
 {
     sysclk_init();
-    quick_blink();
     board_init();
+    cpu_irq_enable();
     udc_start();
+}
+
+int main(void) 
+{
+    hardware_init();
+    for (;;)
+    {
+        if (my_flag_autorize_cdc_transfert) 
+        {
+            udi_cdc_putc('A');
+            udi_cdc_getc();
+        }
+    }
 }

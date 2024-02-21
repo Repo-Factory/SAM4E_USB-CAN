@@ -33,7 +33,7 @@ add_executable(
     src/ASF/sam/utils/cmsis/sam4e/source/templates/system_sam4e.c 
     src/ASF/sam/utils/syscalls/gcc/syscalls.c 
     
-    src/utils/quick_blink.c
+    # src/utils/quick_blink.c
 
     # src/projects/can/can_drv.c
     # src/projects/can/can_ex.c
