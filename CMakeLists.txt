@@ -34,13 +34,17 @@ add_executable(
     src/ASF/sam/utils/syscalls/gcc/syscalls.c 
     
     # src/utils/quick_blink.c
-
     # src/projects/can/can_drv.c
     # src/projects/can/can_ex.c
-    src/projects/usb/usb.c
+    # src/projects/usb/usb.c
+    # src/projects/usb/usb_enable.c
     # src/projects/other/print.c
     # src/projects/other/quick.c
  	# src/projects/other/light.c
+
+    src/projects/usb/src/usb_enable.c
+    src/projects/usb/src/usb_timer.c
+    src/projects/usb/usb_loop.c
 )
 
 include_directories(
@@ -105,7 +109,8 @@ include_directories(
     src/ASF/thirdparty/CMSIS/Lib/ 
     src/ASF/thirdparty/CMSIS/Lib/GCC/ 
     src/config/
-    src/utils/
+    src/utils/include
+    src/projects/usb/include
 )
 
 target_compile_options(${PROJECT_NAME} PRIVATE
