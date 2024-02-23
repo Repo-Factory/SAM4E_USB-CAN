@@ -2,7 +2,6 @@
 #define USB_MECH_H
 
 #define LONG_MESSAGE_SIZE 64
-#define SHORT_MESSAGE_SIZE 32
 
 #define TOPIC_BYTES 2
 #define SUBTOPIC_BYTES 2
@@ -14,13 +13,15 @@
 #define NUM_TOPICS 6
 #define NUM_SUBTOPICS 6
 
+typedef unsigned char byte_t;
+
 typedef struct long_message_t
 {
-    unsigned char topic_id    [TOPIC_BYTES];
-    unsigned char subtopic_id [SUBTOPIC_BYTES];
-    unsigned char flags       [FLAG_BYTES];
-    unsigned char data        [LONG_MSG_DATA];
-    unsigned char reserved    [RESERVED_BYTES];
+    byte_t topic_id    [TOPIC_BYTES];
+    byte_t subtopic_id [SUBTOPIC_BYTES];
+    byte_t flags       [FLAG_BYTES];
+    byte_t data        [LONG_MSG_DATA];
+    byte_t reserved    [RESERVED_BYTES];
 } long_message_t;
 
 typedef enum device_topic_t
@@ -36,6 +37,6 @@ typedef enum device_topic_t
 /* 
  * Will receive raw buffer from SAM
  */
-void HANDLE_MESSAGE(const unsigned char* message);
+void HANDLE_MESSAGE(const byte_t* message);
 
 #endif

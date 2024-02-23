@@ -1,3 +1,7 @@
+/* 
+ * Follow ASFs API to Enable USB Peripheral
+ */
+
 #include <asf.h>
 #include "usb_enable.h"
 

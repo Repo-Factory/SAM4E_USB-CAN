@@ -1,3 +1,7 @@
+/* 
+ * Use to configure callback on timer
+ */
+
 #include <asf.h>
 #include "usb_enable.h"
 

@@ -1,6 +1,7 @@
 #include "led_f.h"
 #include "usb_enable.h"
 #include "usb_timer.h"
+#include "usb_mech.h"
 #include <stdio.h>
 #include <string.h>
 
@@ -16,24 +17,19 @@
 
 static unsigned char buffer[USB_PACKET_SIZE_BYTES] = {0};
 
-void handle_message(const unsigned char* buffer)
-{
-    
-}
-
 void enter_loop(void)
 {
     for (;;)
     {
         udi_cdc_read_no_polling((void*)buffer, USB_PACKET_SIZE_BYTES);
-        handle_message(buffer);
+        // HANDLE_MESSAGE(buffer);
         CLEAR_BUFFER(buffer, USB_PACKET_SIZE_BYTES);
     }
 }
 
 void timer_callback(void)
 {
-    
+    // Handle CAN and device polling
 }
 
 int main(void) 

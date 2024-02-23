@@ -45,6 +45,7 @@ add_executable(
     src/projects/usb/src/usb_enable.c
     src/projects/usb/src/usb_timer.c
     src/projects/usb/usb_loop.c
+    src/projects/usb/src/usb_mech.c
 )
 
 include_directories(
