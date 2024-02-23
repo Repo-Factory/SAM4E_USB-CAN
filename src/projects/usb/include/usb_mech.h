@@ -1,4 +1,5 @@
-#include <cstdint>
+#ifndef USB_MECH_H
+#define USB_MECH_H
 
 #define LONG_MESSAGE_SIZE 64
 #define SHORT_MESSAGE_SIZE 32
@@ -8,7 +9,7 @@
 #define FLAG_BYTES 2
 #define RESERVED_BYTES 2
 #define NON_DATA_BYTES TOPIC_BYTES+SUBTOPIC_BYTES+RESERVED_BYTES+FLAG_BYTES
-#define LONG_MSG_DATA LONG_MESSAGE_SIZE - NON_DATA_BYTES
+#define LONG_MSG_DATA LONG_MESSAGE_SIZE-NON_DATA_BYTES
 
 #define NUM_TOPICS 6
 #define NUM_SUBTOPICS 6
@@ -22,18 +23,19 @@ typedef struct long_message_t
     unsigned char reserved    [RESERVED_BYTES];
 } long_message_t;
 
-typedef enum device_category_t
+typedef enum device_topic_t
 {
-    CONTROLLER,
-    SYSTEM_MONITOR,
-    POWER_SYSTEM,
-    MOTION_CONTROL,
-    RESERVED,
-    AUXILLARY
-} device_category_t;
+    CONTROLLER      = 0,
+    SYSTEM_MONITOR  = 1,
+    POWER_SYSTEM    = 2,
+    MOTION_CONTROL  = 3,
+    RESERVED        = 4,
+    AUXILLARY       = 5
+} device_topic_t;
 
-// typedef enum device_topic_t
-// {
+/* 
+ * Will receive raw buffer from SAM
+ */
+void HANDLE_MESSAGE(const unsigned char* message);
 
-// } device_topic_t;
-
+#endif
